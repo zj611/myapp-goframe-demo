@@ -97,8 +97,15 @@ sudo cp ./swag /usr/local/bin
 ### 使用swagger
 ```bash
 gf swagger  #生成swagger.json
-gf swagger -s 127.0.0.1:8199  #拉起swagger服务端，点击页面可查看接口api
+gf swagger -s 127.0.0.1:8199  #（忽略，一般不用）拉起swagger服务端，点击页面可查看接口api
 ```
+
+## 镜像打包
+编写Dockerfile
+```bash
+gf docker main.go -t myapp:test
+```
+
 
 
 
