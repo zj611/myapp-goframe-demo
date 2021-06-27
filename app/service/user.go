@@ -1,6 +1,7 @@
 package service
 
 import (
+	"github.com/gogf/gf/frame/g"
 	"myapp/app/dao"
 	"myapp/app/model"
 )
@@ -32,13 +33,12 @@ func (s *userService) SignUp(r *model.UserServiceSignUpReq) (error, *model.Accou
 	//account, _ := dao.Account.FindOne("account","zhangsan")
 	var account model.Account
 	var err error
-	if err = dao.Account.Where("account", "zhangsan").Scan(&account);err != nil{
-		return err,nil
+	if err = dao.Account.Where("account", "zhangsan").Scan(&account); err != nil {
+		return err, nil
 	}
+	g.Log().Info("ssssssv: ", account)
+	g.Log().Info(g.Config().GetString("server.LogPath"))
 	return nil, &account
-
-
-
 
 }
 

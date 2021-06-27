@@ -88,3 +88,18 @@ generated: app/model/model.go
 done!
 ```
 
+## 安装swagger
+### 下载&安装
+下载&安装[链接](https://github.com/swaggo/swag)
+```bash
+sudo cp ./swag /usr/local/bin
+```
+### 使用swagger
+```bash
+gf swagger  #生成swagger.json
+gf swagger -s 127.0.0.1:8199  #拉起swagger服务端，点击页面可查看接口api
+```
+
+
+
+

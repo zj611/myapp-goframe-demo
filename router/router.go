@@ -5,17 +5,6 @@ import (
 	"github.com/gogf/gf/net/ghttp"
 	"myapp/app/api"
 )
-//
-//func init() {
-//	s := g.Server()
-//	s.Group("/", func(group *ghttp.RouterGroup) {
-//
-//		group.GET("/hello", api.Hello)
-//
-//		group.ALL("/user", api.User)
-//	})
-//}
-
 
 func init() {
 	s := g.Server()
@@ -35,4 +24,3 @@ func init() {
 		//})
 	})
 }
-

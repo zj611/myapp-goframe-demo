@@ -1,8 +1,6 @@
 package boot
 
-import (
-	_ "myapp/packed"
-)
+import ()
 
 func init() {
 
